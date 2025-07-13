@@ -2,6 +2,7 @@
 #define HARMONYREN_UTILS_TYPES_HPP
 
 #include <array>
+#include <map>
 #include <string>
 #include <vector>
 
@@ -23,6 +24,7 @@ using String = std::string;
 
 template <typename _T> using Vector = std::vector<_T>;
 template <typename _T, std::size_t _N> using Array = std::array<_T, _N>;
+template <typename _K, typename _V> using Map = std::map<_K, _V>;
 
 } // namespace harmonyren
 
