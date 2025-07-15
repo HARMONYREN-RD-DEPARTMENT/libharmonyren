@@ -1,14 +1,21 @@
 #ifndef HARMONYREN_UTILS_TYPES_HPP
 #define HARMONYREN_UTILS_TYPES_HPP
 
-#include <array>
-#include <map>
+// C++ includes
 #include <string>
-#include <vector>
 
+// C++17 includes
+#include <map>
+#include <array>
+#include <vector>
+#include <filesystem> // IWYU pragma: keep
+
+// Ported C includes
 #include <cstdint>
 
 namespace harmonyren {
+
+namespace fs = std::filesystem; // NOLINT(misc-unused-alias-decls)
 
 using u8 = std::uint8_t;
 using u16 = std::uint16_t;

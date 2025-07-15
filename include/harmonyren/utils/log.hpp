@@ -1,6 +1,7 @@
 #ifndef HARMONYREN_UTILS_LOG_HPP
 #define HARMONYREN_UTILS_LOG_HPP
 
+// External includes
 #include <harmonyren/utils/types.hpp>
 
 namespace harmonyren {
@@ -15,6 +16,7 @@ constexpr const char *COLOR_RED = "\033[31m";
 void info(const bool &condition, const String &msg);
 void note(const bool &condition, const String &msg);
 void warn(const bool &condition, const String &msg);
+u32 error(const bool &condition, const String &msg, u32 err_code = 1);
 void fatal_error(const bool &condition, const String &msg, u32 err_code = 1);
 
 } // namespace log
